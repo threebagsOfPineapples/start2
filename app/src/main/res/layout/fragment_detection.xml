@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="93.5" />
+
+    <LinearLayout
+        android:id="@+id/fragment_dete_ll_test"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="463"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="200.5">
+
+            <com.tachyon5.kstart.view.RippleLayout
+                android:id="@+id/ripple_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_white_oblate_of"></com.tachyon5.kstart.view.RippleLayout>
+
+            <ImageView
+                android:id="@+id/iv_rip"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_rip" />
+
+            <com.tachyon5.kstart.view.LineView
+                android:id="@+id/lv"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center" />
+
+            <com.tachyon5.kstart.view.AVLoadingIndicatorView
+                android:id="@+id/fragment_dete_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:indicatorColor="@color/black" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="93.5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:background="@drawable/icon_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/calibration_help4" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/dp_20"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="@dimen/dp_8"
+                    android:background="@drawable/icon_add" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/calibration_help4" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fragment_dete_tv_mode_name"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="77.5"
+            android:gravity="center"
+            android:text="@string/calibration_help2" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="91.5">
+
+            <TextView
+                android:id="@+id/fragment_dete_tv_start_dete"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_black_arc_180"
+                android:gravity="center"
+                android:paddingEnd="@dimen/dp_20"
+                android:paddingStart="@dimen/dp_20"
+                android:text="测试撒啊啊啊啊啊阿" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_dete_ll_result"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="463"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="208" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="255"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/fragment_dete_tv_testAgain"
+                android:layout_margin="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:background="@drawable/border_black_arc_180"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="测试撒啊啊啊啊啊阿"
+                android:layout_height="40dp" />
+
+            <TextView
+                android:id="@+id/fragment_dete_tv_stopDete"
+                android:layout_marginTop="@dimen/dp_8"
+                android:paddingStart="@dimen/dp_20"
+                android:paddingEnd="@dimen/dp_20"
+                android:background="@drawable/border_black_arc_180"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:text="测试撒啊啊啊啊啊阿"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

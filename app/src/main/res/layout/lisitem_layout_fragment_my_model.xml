@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="?android:attr/listPreferredItemHeight">
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/fragment_home_lv_tv_model_name"
+        android:text="@string/model_start_collect"
+        android:gravity="center"
+        android:textSize="@dimen/sp_16"
+        android:layout_width="0dp"
+        android:layout_weight="260"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/fragment_home_lv_tv_model_desc"
+        android:gravity="center"
+        android:lines="1"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/bd_gray"
+        android:text="@string/model_types_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="70" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:src="@drawable/icon_right_arrow" />
+</LinearLayout>

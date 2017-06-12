@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="548"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:textSize="60sp">
+
+            <TextView
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="@string/model_total_number"
+                android:textSize="20dp"
+                android:layout_weight="105" />
+
+            <TextView
+                android:id="@+id/fragment_home_tv_model_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="325"
+                android:textStyle="bold"
+                android:textSize="45sp"
+                android:layout_weight="190" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="165">
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_ll_today_collect"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:src="@drawable/icon_fragment_home_today_collect"
+                        android:id="@+id/fragment_home_iv_today_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_weight="0.7" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="@string/today_collect"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_today_collect_sum"
+                        android:textSize="20dp"
+                        android:text="25"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fragment_home_ll_total_collect"
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:src="@drawable/icon_fragment_home_total_collect"
+                        android:id="@+id/fragment_home_iv_total_collect"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_weight="0.7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="@string/total"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_total_collect_sum"
+                        android:textSize="20dp"
+                        android:text="25"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/fragment_home_ll_collect_times"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:src="@drawable/icon_fragment_home_detection_times"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center|bottom"
+                        android:layout_weight="0.7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:text="@string/collect_times"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/fragment_home_tv_total_collect_times"
+                        android:textSize="20dp"
+                        android:text="25"
+                        android:textStyle="bold"
+                        android:gravity="center|top"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="20"
+            android:background="@color/bd_gray" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="630">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/fragment_home_tv_recommed_model"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/recommended_model"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toStartOf="@+id/fragment_home_tv_add_model" />
+
+                <TextView
+                    android:id="@+id/fragment_home_tv_add_model"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center"
+                    android:text="@string/add_model" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/fragment_home_lv_model"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>

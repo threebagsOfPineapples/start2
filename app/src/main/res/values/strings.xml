@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">STart</string>
+    <!-- 通用  -->
+    <string name="title_back">返回</string>
+    <string name="ble_not_supported">蓝牙不支持</string>
+    <string name="error_bluetooth_not_supported">蓝牙不支持</string>
+    <string name="unknown_device">蓝牙不支持</string>
+    <!--搜索蓝牙界面-->
+    <string name="bt_scan_activty_title">设备列表</string>
+    <string name="bt_scan_activty_choose">选取设备...</string>
+    <!--tab-->
+    <string name="tab_home">首页</string>
+    <string name="tab_model">模型</string>
+    <string name="tab_detection">检测</string>
+    <string name="tab_record">记录</string>
+    <string name="tab_set">设置</string>
+    <!--首页-->
+    <string name="model_total_number">模型总数</string>
+    <string name="today_collect">今日采集</string>
+    <string name="total">累计</string>
+    <string name="collect_times">检测次数</string>
+    <string name="recommended_model">推荐模型</string>
+    <string name="add_model">添加模型</string>
+    <string name="my_model">我的模型</string>
+    <string name="title_activity_add_new_model">AddNewModelActivity</string>
+    <!--模型-->
+
+    <!--检测-->
+
+    <!--记录-->
+
+    <!--设置-->
+    <string name="login">登录</string>
+    <string name="my_device">我的设备</string>
+    <string name="device_calibration">设备校准</string>
+    <string name="fw_version">固件版本</string>
+    <string name="standby_time">待机时间</string>
+    <string name="notify">通知</string>
+    <string name="helper">使用帮助</string>
+    <string name="feedback">意见反馈</string>
+    <string name="about">关于</string>
+    <string name="logout">退出登录</string>
+    <string name="device_sn">设备SN</string>
+    <string name="mac_address">MAC地址</string>
+    <string name="current_power">当前电量</string>
+    <string name="unbind_device">解绑设备</string>
+    <!--添加新的模型-->
+    <string name="model_types">模型类型:</string>
+    <string name="model_name">模型姓名:</string>
+    <string name="model_description">模型描述:</string>
+    <string name="model_picture">模型图片:</string>
+    <string name="create_model">创建模型</string>
+    <string name="model_types_description">只有简易模型才能在手机上采集与建模，定型建模与定量建模
+                                只支持手机采集，建模需要PC端应用程序</string>
+    <string name="title_activity_model_item">ModelItemActivity</string>
+    <string name="model_state">模型状态:</string>
+    <string name="model_start_collect">开始采集</string>
+    <string name="model_collect_continue">继续采集</string>
+    <string name="model_build">建立模型</string>
+    <!--数据采集-->
+    <string name="model_data_collect">模型数据采集</string>
+    <string name="model_collect_state_">继续采集</string>
+    <string name="model_collect_notice">物质被反复采集的数据越多,未来建立的模型就更完善，模型被用来检测返回的
+        结果将更准确
+    </string>
+    <!-- 关于界面-->
+    <string name="aboutActivity_textView_appName">SKART</string>
+    <string name="aboutActivity_textView_serviceHours">工作时间9:00-17:00</string>
+    <string name="aboutActivity_textView_phoneNumber">18381088971</string>
+    <string name="url">dsajdamwdajdl</string>
+    <string name="address">哈撒号地块垃圾</string>
+    <!--通知页面-->
+    <!--蓝牙界面-->
+    <string name="bluetooth_no_connect">蓝牙未连接</string>
+    <string name="bluetooth_no_turnon">蓝牙未开启</string>
+    <string name="click_to_sure">在弹出的对话框点击"确定"</string>
+    <string name="do_not_open_now">暂不开启</string>
+    <string name="do_not_connect_now">暂不连接</string>
+    <string name="do_not_bind_now">暂不绑定</string>
+    <string name="open_bt_to_connect">打开蓝牙允许"MSI"连接到设备</string>
+    <string name="click_to_open">点击开启</string>
+    <string name="scanning_msi">正在搜索MSi</string>
+    <string name="please_close_to_msi">请将MSI靠近手机</string>
+    <string name="choose_device">选取设备...</string>
+    <string name="device_binding">设备绑定中</string>
+    <string name="bind_fail">绑定失败</string>
+    <string name="try_again">重试</string>
+    <string name="help">帮助</string>
+    <string name="device_not_connnect">设备未连接</string>
+    <string name="good">好</string>
+    <string name="cancel">取消</string>
+    <string name="or_go_to_connect">是否现在连接设备</string>
+    <string name="connect_help1">MSI是否有电? </string>
+    <string name="connect_help2">可将设备放在充电器上，以确保有电</string>
+    <string name="connect_help3">附近可有其他手机连接过MSI</string>
+    <string name="connect_help4">可先将该手机蓝牙关闭，再使用当前手机进行添加</string>
+    <string name="connect_help5">尝试重新启动蓝牙</string>
+    <string name="connect_help6">如果手机有电，切手机贴近后仍无法搜索到，可以尝试重启手机蓝牙</string>
+    <string name="connect_help7">尝试重启手机</string>
+    <string name="connect_help8">如果重启蓝牙无效，请尝试重启手机</string>
+    <string name="calibration_help1">设备是否开启状态?</string>
+    <string name="calibration_help2">确保设备正常开启，保持开机状态</string>
+    <string name="calibration_help3">app与设备连接正常?</string>
+    <string name="calibration_help4">app与设备蓝牙连接正常</string>
+    <string name="calibration_help5">设备未受粘污?</string>
+</resources>

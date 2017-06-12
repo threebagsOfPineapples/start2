@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="67.5" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="250.5"
+        android:layout_gravity="center">
+
+        <com.tachyon5.kstart.view.RippleLayout
+            android:background="@drawable/circle_white_oblate_of"
+            android:layout_gravity="center"
+            android:id="@+id/ripple_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.tachyon5.kstart.view.RippleLayout>
+
+        <ImageView
+            android:id="@+id/iv_rip"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_rip" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_green_right"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/bg_blue_right_icon" />
+
+        <com.tachyon5.kstart.view.LineView
+            android:id="@+id/lv"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <com.tachyon5.kstart.view.AVLoadingIndicatorView
+            android:layout_gravity="center"
+            android:id="@+id/actvity_collect_cv"
+            android:layout_width="wrap_content"
+            app:indicatorColor="@color/black"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="25"
+        android:text="@string/model_collect_state_"
+        android:id="@+id/activity_collect_tv_number" />
+
+    <TextView
+        android:id="@+id/activity_collect_tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_weight="54.5"
+        android:text="@string/model_collect_notice"
+        android:textSize="@dimen/sp_12" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="156.5">
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="95" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="185"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_startcollect"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dp_12"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="@string/model_start_collect"
+                android:background="@drawable/border_black_arc_180" />
+
+            <TextView
+                android:id="@+id/tv_stopcollect"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/dp_12"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:text="结束采集"
+                android:background="@drawable/border_black_arc_180" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="95" />
+    </LinearLayout>
+</LinearLayout>

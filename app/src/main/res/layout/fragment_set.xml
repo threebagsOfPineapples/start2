@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/fragment_auth_RL_logion"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/pink">
+
+            <com.tachyon5.kstart.view.CircleImageView
+                android:id="@+id/fragment_auth_imageView_icon_wx"
+                android:layout_margin="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/white"
+                android:background="@drawable/ic_title_back" />
+
+            <TextView
+                android:id="@+id/fragment_auth_wxName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:layout_below="@+id/fragment_auth_imageView_icon_wx"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/white_smoke" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_myDevice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/iv1"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:id="@+id/iv_icon_mydevice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iv_icon_mydevice"
+                android:padding="10dp"
+                android:text="@string/my_device" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/iv1"
+                android:padding="10dp"
+
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_device_calibration"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/ic_title_back" />
+
+            <ImageView
+                android:id="@+id/iv_icon_dark"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_icon_dark"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="@string/device_calibration" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/fragment_auth_RL_Time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/time_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:id="@+id/iv_icon_time"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_icon_time"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="@string/model_start_collect" />
+
+            <TextView
+                android:id="@+id/tv_fragment_detection_time"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_alignTop="@+id/iv_icon_time"
+                android:layout_marginEnd="5dp"
+                android:gravity="center"
+                android:layout_toStartOf="@+id/time_arrow"
+                android:text="未设置" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_fw_version"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/activity_setting_iv_fw"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:id="@+id/iv_fw_version"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_tab_home"
+                android:layout_toStartOf="@+id/activity_setting_iv_fw"
+                android:gravity="center"
+                android:padding="5dp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/iv_icon_fw"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/fw_version"
+                android:id="@+id/textView"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/iv_icon_fw" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/fragment_auth_RL_upDate"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/app_version_arrow"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:id="@+id/app_version_new"
+                android:layout_width="35dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@+id/app_version_arrow"
+                android:src="@drawable/icon_tab_home"
+                android:visibility="gone"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/tv_update"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:text=""
+                android:textColor="@color/littleblack" />
+
+            <ImageView
+                android:id="@+id/iv_icon_update"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/iv_icon_update"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/feedback" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/whiteSmoke" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_notice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_notice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/iv_icon_notice"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/notify" />
+
+            <ImageView
+                android:layout_toEndOf="@+id/tv_notice"
+                android:id="@+id/fragment_auth_iv_hadnotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/point_new" />
+
+            <ImageView
+                android:id="@+id/iv_icon_notice"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_help"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_help"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/iv_icon_help"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/helper" />
+
+            <ImageView
+                android:id="@+id/iv_icon_help"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_feedBack"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/iv_icon_tellus"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:id="@+id/tv_tellus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/feedback"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/iv_icon_tellus" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightgray" />
+
+        <RelativeLayout
+            android:id="@+id/fragment_set_RL_about"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:id="@+id/iv_icon_about"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:layout_toEndOf="@+id/iv_icon_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/about" />
+
+            <ImageView
+                android:id="@+id/iv_about"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/icon_tab_home" />
+
+            <TextView
+                android:id="@+id/fragment_auth_tv_app_version"
+                android:layout_toStartOf="@+id/iv_about"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="10dp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/whiteSmoke">
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/fragment_auth_btn_exit"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:textSize="@dimen/sp_16"
+                android:text="@string/logout"
+                android:textColor="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rl_wx_logion"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv111"
+                        android:layout_gravity=""
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_tab_home"
+                        android:layout_marginEnd="8dp" />
+
+                    <TextView
+                        android:layout_alignRight="@+id/iv111"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/sp_16"
+                        android:text="微信登陆" />
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/whiteSmoke" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.Space
+        android:layout_weight="38"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/linechart"
+        android:background="@color/white"
+        android:layout_weight="340"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></com.github.mikephil.charting.charts.LineChart>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="45"
+        android:gravity="center">
+
+        <LinearLayout
+
+            android:id="@+id/ll_absorbance"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:background="@drawable/circle_purpse_oblate_of"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:background="@drawable/icon_bt" />
+
+            <TextView
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="吸收度"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_strength"
+            android:background="@drawable/circle_blue_oblate_of"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_bt" />
+
+            <TextView
+                android:layout_marginEnd="@dimen/dp_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="强度"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="182"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_discard"
+            android:background="@drawable/border_black_arc_180"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_bt" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_marginEnd="@dimen/dp_30"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="丢弃此数据" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:id="@+id/ll_scan_before"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="132">
+
+            <TextView
+                android:id="@+id/tv_big"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:text="@string/bluetooth_no_turnon"
+                android:textSize="@dimen/sp_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_small"
+                android:text="@string/click_to_sure"
+                android:textSize="@dimen/sp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="204"
+            android:orientation="vertical">
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/bg_bt_open"
+                android:id="@+id/iv_open_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:indeterminateDuration="1500"
+                android:id="@+id/pbar"
+                android:src="@drawable/icon_bt"
+                android:indeterminateDrawable="@drawable/animdraw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/pbar_stop"
+                android:src="@drawable/icon_bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="151"
+            android:id="@+id/space" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_calibration_preparation"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="151"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_20"
+                android:text="校准前准备:"
+                android:layout_weight="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <TextView
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="1. 保证设备正常开启，APP与蓝牙正常连接"></TextView>
+
+            <TextView
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="2. 保持探头与采样盒干燥清洁"></TextView>
+
+            <TextView
+                android:layout_marginStart="@dimen/dp_20"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="3. 保持探头与采样盒干燥清洁"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/ll_btn_calibration"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="115"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="175"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/scanbt_tv_calibration"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_weight="575"
+                android:textColor="#1490f6"
+                android:text="@string/model_start_collect"
+                android:background="@drawable/circle_blue_light_oblate_of"
+                android:layout_height="45dp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="175"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_do_not"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="115">
+
+            <TextView
+                android:textSize="@dimen/sp_12"
+                android:layout_margin="@dimen/dp_8"
+                android:id="@+id/tv_do_not_open"
+                android:layout_centerVertical="true"
+                android:text="@string/do_not_open_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_toEndOf="@id/tv_do_not_open"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_12"
+                android:layout_height="@dimen/dp_12"
+                android:src="@drawable/icon_right_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_scanning"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="@string/bt_scan_activty_choose"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="20dp"
+                android:paddingLeft="25dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_device_scan_swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ListView
+                android:paddingBottom="4dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="4dp"
+                android:id="@+id/activity_device_scan_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>
